@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import LogIn from "./LogIn";
 import SignUp from "./SignUp";
 
-const AuthWrapper = ({ setModalIsOpen }) => {
+const AuthWrapper = ({ closeModal }) => {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <div className="border-5 bg-secondary text-fadedtext  grid place-content-center  rounded">
-      <div className="text-right pt-4">
+    <div className="border-5 bg-slate-800  text-white  grid place-content-center  rounded p-8">
+      <div className="text-right ">
         <button
-          className="bg-black rounded-full h-8 w-8 "
+          className="bg-primary rounded-full h-8 w-8 "
           onClick={() => {
-            setModalIsOpen(false);
+            closeModal();
           }}
         >
           X

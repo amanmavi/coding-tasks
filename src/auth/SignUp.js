@@ -1,13 +1,13 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
-import { AiOutlineEye } from "react-icons/ai";
 
 const SignUp = ({ setShowLogin }) => {
+  const inputStyle = "border  rounded laptop:w-96 w-72 py-2 px-2";
   return (
     <form>
       <div>
-        <h4 className="flex justify-center text-modalTopColor">SIGN UP</h4>
-        <p className="flex justify-center text-white leading-5 text-lg font-semibold ">
+        <h4 className="text-center text-white text-xl font-bold">SIGN UP</h4>
+        <p className="text-center text-white  font-semibold ">
           Create an account to continue
         </p>
       </div>
@@ -16,7 +16,7 @@ const SignUp = ({ setShowLogin }) => {
         <input
           type="email"
           placeholder="Enter your email"
-          className="border bg-secondary rounded w-96 py-2 px-2"
+          className={inputStyle}
         />
       </div>
       <div className="pb-3">
@@ -24,7 +24,7 @@ const SignUp = ({ setShowLogin }) => {
         <input
           type="text"
           placeholder="Choose a preferred username"
-          className="border bg-secondary rounded w-96 py-2 px-2"
+          className={inputStyle}
         />
       </div>
       <div className="pb-3">
@@ -33,20 +33,17 @@ const SignUp = ({ setShowLogin }) => {
           <input
             type="password"
             placeholder="Choose a strong password"
-            className="border rounded bg-secondary w-96 py-2 px-2"
+            className={inputStyle}
           />
-          <div className="flex absolute w-96 justify-end items-center h-full px-4 ">
-            <AiOutlineEye />
-          </div>
         </div>
       </div>
       <button
         type="button"
-        className="bg-btnBg w-96 py-2 rounded my-2 text-white"
+        className="border  rounded laptop:w-96 w-72 py-2 my-2 px-2 bg-primary font-semibold"
       >
         Continue
       </button>
-      <div className="flex gap-2 ">
+      <div className="flex gap-2 py-1">
         <p
           className="cursor-pointer"
           onClick={() => {

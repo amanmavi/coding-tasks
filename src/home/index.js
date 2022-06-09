@@ -28,8 +28,8 @@ const Index = () => {
   ];
 
   return (
-    <div className=" bg-primary min-h-screen text-slate-400 pb-4">
-      <div className="md:w-1/2 mx-auto">
+    <div className=" bg-primary min-h-screen text-slate-400 pb-4 ">
+      <div className="md:w-1/2 mx-auto px-4">
         <Header />
         <NewPost setModalIsOpen={setModalIsOpen} />
         {userPosts.map((userPost) => {
